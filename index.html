@@ -37,10 +37,10 @@
         }
 
         .glass-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
         }
 
         .ai-card {
@@ -49,6 +49,7 @@
             height: 100%;
             position: relative;
             overflow: hidden;
+            background: white;
         }
 
         .ai-card::before {
@@ -59,30 +60,33 @@
             right: 0;
             height: 6px;
             background: linear-gradient(90deg, var(--gradient-from), var(--gradient-to));
-            opacity: 0.8;
+            opacity: 1;
         }
 
         .ai-card:hover {
             transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 40px 0 rgba(31, 38, 135, 0.25);
+            box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
         }
 
         .immediate-color {
             --gradient-from: #3b82f6;
             --gradient-to: #60a5fa;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(96, 165, 250, 0.05) 100%);
+            background: white;
+            border-left: 4px solid #3b82f6;
         }
 
         .short-color {
             --gradient-from: #10b981;
             --gradient-to: #34d399;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(52, 211, 153, 0.05) 100%);
+            background: white;
+            border-left: 4px solid #10b981;
         }
 
         .extended-color {
             --gradient-from: #8b5cf6;
             --gradient-to: #a78bfa;
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(167, 139, 250, 0.05) 100%);
+            background: white;
+            border-left: 4px solid #8b5cf6;
         }
 
         .icon-container {
@@ -139,7 +143,7 @@
         .feature-title {
             font-weight: 700;
             margin-bottom: 0.75rem;
-            color: #1f2937;
+            color: #111827;
             font-size: 0.95rem;
             letter-spacing: 0.5px;
             text-transform: uppercase;
@@ -147,7 +151,7 @@
 
         .feature-content {
             line-height: 1.7;
-            color: #4b5563;
+            color: #1f2937;
         }
 
         .modality-badge {
@@ -183,12 +187,12 @@
         }
 
         .header-gradient {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             border-radius: 24px;
             padding: 2.5rem;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         .comparison-table {
@@ -218,13 +222,13 @@
     <div class="container mx-auto">
         <header class="text-center my-10">
             <div class="header-gradient">
-                <h1 class="text-5xl font-extrabold mb-4 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                <h1 class="text-5xl font-extrabold mb-4 bg-gradient-to-r from-purple-700 to-blue-700 bg-clip-text text-transparent">
                     Les différents types d'IA : comparaison
                 </h1>
-                <p class="text-xl text-gray-700 mb-2 font-medium">Classification par profondeur de traitement et capacités</p>
+                <p class="text-xl text-gray-900 mb-2 font-semibold">Classification par profondeur de traitement et capacités</p>
                 <div class="flex items-center justify-center gap-2">
-                    <i class="fas fa-calendar-alt text-purple-600"></i>
-                    <p class="text-sm font-semibold text-gray-600">Mise à jour : novembre 2025</p>
+                    <i class="fas fa-calendar-alt text-purple-700"></i>
+                    <p class="text-sm font-bold text-gray-800">Mise à jour : novembre 2025</p>
                 </div>
             </div>
         </header>
@@ -235,8 +239,8 @@
                     <div class="icon-container immediate-icon">
                         <i class="fas fa-bolt text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center text-gray-800">Réponse immédiate</h2>
-                    <p class="text-sm text-gray-600 text-center font-semibold">(&lt;2 secondes)</p>
+                    <h2 class="text-2xl font-bold text-center text-gray-900">Réponse immédiate</h2>
+                    <p class="text-sm text-gray-700 text-center font-bold">(&lt;2 secondes)</p>
                 </div>
 
                 <div class="feature">
@@ -307,8 +311,8 @@
                     <div class="icon-container short-icon">
                         <i class="fas fa-brain text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center text-gray-800">Raisonnement court</h2>
-                    <p class="text-sm text-gray-600 text-center font-semibold">(2-10 secondes)</p>
+                    <h2 class="text-2xl font-bold text-center text-gray-900">Raisonnement court</h2>
+                    <p class="text-sm text-gray-700 text-center font-bold">(2-10 secondes)</p>
                 </div>
 
                 <div class="feature">
@@ -383,8 +387,8 @@
                     <div class="icon-container extended-icon">
                         <i class="fas fa-project-diagram text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-center text-gray-800">Raisonnement étendu</h2>
-                    <p class="text-sm text-gray-600 text-center font-semibold">(10-120 secondes)</p>
+                    <h2 class="text-2xl font-bold text-center text-gray-900">Raisonnement étendu</h2>
+                    <p class="text-sm text-gray-700 text-center font-bold">(10-120 secondes)</p>
                 </div>
 
                 <div class="feature">
@@ -460,8 +464,8 @@
         </div>
 
         <div class="glass-card rounded-2xl p-8 mb-10">
-            <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center gap-3">
-                <i class="fas fa-table text-purple-600"></i>
+            <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                <i class="fas fa-table text-purple-700"></i>
                 Comparaison des capacités
             </h3>
             <div class="overflow-auto comparison-table">
@@ -544,39 +548,39 @@
                     </tbody>
                 </table>
             </div>
-            <div class="mt-6 p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl border border-gray-200">
-                <p class="mb-3 font-bold text-gray-700 flex items-center gap-2">
-                    <i class="fas fa-info-circle text-purple-600"></i>
+            <div class="mt-6 p-4 bg-white rounded-xl border border-gray-300 shadow-sm">
+                <p class="mb-3 font-bold text-gray-900 flex items-center gap-2">
+                    <i class="fas fa-info-circle text-purple-700"></i>
                     Légende des modalités :
                 </p>
-                <div class="flex flex-wrap gap-4 text-sm text-gray-700">
+                <div class="flex flex-wrap gap-4 text-sm text-gray-900">
                     <div class="flex items-center gap-2">
                         <span class="modality-badge mod-text"></span>
-                        <span class="font-medium">Texte</span>
+                        <span class="font-semibold">Texte</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="modality-badge mod-vision"></span>
-                        <span class="font-medium">Vision</span>
+                        <span class="font-semibold">Vision</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="modality-badge mod-audio"></span>
-                        <span class="font-medium">Audio</span>
+                        <span class="font-semibold">Audio</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="modality-badge mod-gen"></span>
-                        <span class="font-medium">Génération multimédia</span>
+                        <span class="font-semibold">Génération multimédia</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="modality-badge mod-code"></span>
-                        <span class="font-medium">Code avancé</span>
+                        <span class="font-semibold">Code avancé</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="glass-card rounded-2xl p-8 mb-10">
-            <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center gap-3">
-                <i class="fas fa-arrow-trend-up text-purple-600"></i>
+            <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                <i class="fas fa-arrow-trend-up text-purple-700"></i>
                 Évolution des capacités
             </h3>
             <div class="flex flex-col md:flex-row items-center justify-around">
@@ -584,8 +588,8 @@
                     <div class="rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 p-6 mx-auto mb-4 w-20 h-20 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
                         <i class="fas fa-bolt text-blue-600 text-2xl"></i>
                     </div>
-                    <p class="font-bold text-lg text-gray-800">Réponse immédiate</p>
-                    <p class="text-sm text-gray-600 font-medium">Rapide et direct</p>
+                    <p class="font-bold text-lg text-gray-900">Réponse immédiate</p>
+                    <p class="text-sm text-gray-800 font-semibold">Rapide et direct</p>
                     <div class="mt-2 px-3 py-1 bg-blue-100 rounded-full text-xs font-semibold text-blue-700">
                         &lt; 2s
                     </div>
@@ -602,8 +606,8 @@
                     <div class="rounded-2xl bg-gradient-to-br from-green-100 to-green-200 p-6 mx-auto mb-4 w-20 h-20 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
                         <i class="fas fa-brain text-green-600 text-2xl"></i>
                     </div>
-                    <p class="font-bold text-lg text-gray-800">Raisonnement court</p>
-                    <p class="text-sm text-gray-600 font-medium">Analyse structurée</p>
+                    <p class="font-bold text-lg text-gray-900">Raisonnement court</p>
+                    <p class="text-sm text-gray-800 font-semibold">Analyse structurée</p>
                     <div class="mt-2 px-3 py-1 bg-green-100 rounded-full text-xs font-semibold text-green-700">
                         2-10s
                     </div>
@@ -620,17 +624,17 @@
                     <div class="rounded-2xl bg-gradient-to-br from-purple-100 to-purple-200 p-6 mx-auto mb-4 w-20 h-20 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
                         <i class="fas fa-project-diagram text-purple-600 text-2xl"></i>
                     </div>
-                    <p class="font-bold text-lg text-gray-800">Raisonnement étendu</p>
-                    <p class="text-sm text-gray-600 font-medium">Exploration approfondie</p>
+                    <p class="font-bold text-lg text-gray-900">Raisonnement étendu</p>
+                    <p class="text-sm text-gray-800 font-semibold">Exploration approfondie</p>
                     <div class="mt-2 px-3 py-1 bg-purple-100 rounded-full text-xs font-semibold text-purple-700">
                         10-120s
                     </div>
                 </div>
             </div>
-            <div class="mt-8 p-5 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl border-l-4 border-purple-500">
-                <p class="text-sm text-gray-700 leading-relaxed">
-                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
-                    <strong>Note :</strong> Le choix du type de modèle dépend de vos besoins spécifiques en termes de latence, complexité de la tâche et budget.
+            <div class="mt-8 p-5 bg-white rounded-xl border-l-4 border-purple-600 shadow-md">
+                <p class="text-sm text-gray-900 leading-relaxed">
+                    <i class="fas fa-lightbulb text-yellow-600 mr-2"></i>
+                    <strong class="text-gray-900">Note :</strong> Le choix du type de modèle dépend de vos besoins spécifiques en termes de latence, complexité de la tâche et budget.
                     Les modèles à raisonnement étendu excellent dans les tâches nécessitant une réflexion approfondie, tandis que les modèles à réponse immédiate sont idéaux pour des interactions rapides.
                 </p>
             </div>
@@ -639,16 +643,16 @@
         <footer class="mt-10 mb-6">
             <div class="glass-card rounded-2xl p-6 text-center">
                 <div class="flex items-center justify-center gap-2 mb-3">
-                    <i class="fas fa-calendar-check text-purple-600"></i>
-                    <p class="text-sm font-semibold text-gray-700">Mise à jour : novembre 2025</p>
+                    <i class="fas fa-calendar-check text-purple-700"></i>
+                    <p class="text-sm font-bold text-gray-900">Mise à jour : novembre 2025</p>
                 </div>
-                <div class="h-px bg-gradient-to-r from-transparent via-purple-300 to-transparent my-4"></div>
-                <p class="text-gray-700 font-medium">
-                    <i class="fas fa-copyright text-purple-600 mr-1"></i>
+                <div class="h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent my-4"></div>
+                <p class="text-gray-900 font-semibold">
+                    <i class="fas fa-copyright text-purple-700 mr-1"></i>
                     2025, Rochane Kherbouche
                 </p>
-                <p class="text-sm text-gray-600 mt-2">
-                    <i class="fab fa-creative-commons text-purple-600 mr-1"></i>
+                <p class="text-sm text-gray-800 mt-2 font-medium">
+                    <i class="fab fa-creative-commons text-purple-700 mr-1"></i>
                     Sous licence Creative Commons CC BY SA
                 </p>
             </div>
