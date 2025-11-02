@@ -326,7 +326,13 @@
                     <div class="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-xl shadow-sm mb-2 border border-green-200">
                         <p class="text-center font-semibold text-gray-700">Requête → Analyse (3-8 étapes) → Réponse</p>
                     </div>
-                    <p class="feature-content">Décomposition visible du problème en plusieurs étapes de réflexion.</p>
+                    <p class="feature-content mb-2">Décomposition visible du problème en plusieurs étapes de réflexion avec mécanismes multi-étapes internes.</p>
+                    <div class="bg-green-50 p-3 rounded-lg border-l-3 border-green-500 mt-2">
+                        <p class="text-xs text-gray-800">
+                            <i class="fas fa-info-circle text-green-600 mr-1"></i>
+                            <strong>Note :</strong> GPT-5 en mode Auto utilise un système <strong>hybride adaptatif</strong> qui mixe raisonnement rapide et profond selon la complexité détectée. La latence peut varier selon la charge et le profil d'utilisation.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="feature">
@@ -376,19 +382,23 @@
                     <ul class="space-y-1.5 feature-content">
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 text-sm mr-2 mt-1"></i>
-                            <span>Analyse approfondie de documents</span>
+                            <span>Questions/réponses complexes nécessitant une analyse</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 text-sm mr-2 mt-1"></i>
-                            <span>Génération et débogage de code</span>
+                            <span>Tâches analytiques rapides (synthèse, comparaison)</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 text-sm mr-2 mt-1"></i>
-                            <span>Tâches multi-outils complexes</span>
+                            <span>Génération et débogage de code avec explication</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 text-sm mr-2 mt-1"></i>
-                            <span>Planification et structuration</span>
+                            <span>Analyse de documents avec raisonnement structuré</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 text-sm mr-2 mt-1"></i>
+                            <span>Tâches multi-outils avec planification</span>
                         </li>
                     </ul>
                 </div>
@@ -396,7 +406,8 @@
                 <div class="feature">
                     <h3 class="feature-title">Coût</h3>
                     <div class="bg-green-50 p-3 rounded-lg border border-green-200">
-                        <p class="feature-content font-bold text-green-700 text-center">5 - 20$ / 1M tokens</p>
+                        <p class="feature-content font-bold text-green-700 text-center">3 - 15$ / 1M tokens</p>
+                        <p class="text-xs text-gray-700 text-center mt-1">Varie selon le fournisseur et le type d'abonnement</p>
                     </div>
                 </div>
             </div>
@@ -628,7 +639,7 @@
                                 <i class="fas fa-dollar-sign text-gray-400 mr-2"></i>Coût moyen
                             </td>
                             <td class="py-3 px-6 text-center bg-blue-50 font-bold text-blue-700">0.15-1$</td>
-                            <td class="py-3 px-6 text-center bg-green-50 font-bold text-green-700">5-20$</td>
+                            <td class="py-3 px-6 text-center bg-green-50 font-bold text-green-700">3-15$</td>
                             <td class="py-3 px-6 text-center bg-purple-50 font-bold text-purple-700">20-250$</td>
                         </tr>
                     </tbody>
@@ -718,11 +729,17 @@
                 </div>
             </div>
             <div class="mt-8 p-5 bg-white rounded-xl border-l-4 border-purple-600 shadow-md">
-                <p class="text-sm text-gray-900 leading-relaxed">
+                <p class="text-sm text-gray-900 leading-relaxed mb-3">
                     <i class="fas fa-lightbulb text-yellow-600 mr-2"></i>
-                    <strong class="text-gray-900">Note :</strong> Le choix du type de modèle dépend de vos besoins spécifiques en termes de latence, complexité de la tâche et budget.
+                    <strong class="text-gray-900">Note importante :</strong> Le choix du type de modèle dépend de vos besoins spécifiques en termes de latence, complexité de la tâche et budget.
                     Les modèles à raisonnement étendu excellent dans les tâches nécessitant une réflexion approfondie, tandis que les modèles à réponse immédiate sont idéaux pour des interactions rapides.
                 </p>
+                <div class="bg-yellow-50 p-3 rounded-lg border border-yellow-200">
+                    <p class="text-xs text-gray-900 leading-relaxed">
+                        <i class="fas fa-exclamation-triangle text-yellow-600 mr-1"></i>
+                        <strong>Distinction clé :</strong> La catégorie <strong>"Raisonnement court"</strong> se distingue de la <strong>"Réponse immédiate"</strong> par la présence d'étapes de réflexion visibles (3-8 étapes) plutôt qu'une simple prédiction directe. Cette catégorie est très <strong>dynamique</strong> : plusieurs modèles adaptent automatiquement leur latence et profondeur de raisonnement selon la complexité de la requête (ex : GPT-5 Auto).
+                    </p>
+                </div>
             </div>
         </div>
 
